@@ -32,6 +32,8 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     # Allocation for the current decision (manual or agent-based)
+    app_name = models.StringField(initial='rulebased_del2nd')
+
     allocation = models.IntegerField(
         min=0,
         max=100,
